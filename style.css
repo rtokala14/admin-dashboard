@@ -6,7 +6,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     min-height: 100vh;
 }
 
@@ -16,26 +16,24 @@ body {
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     padding: 0.6rem;
 }
 
 .title {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .title-icon {
     position: relative;
-    top: 0.5rem;
-    left: -0.8rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    top: -2rem;
+    width: 90%;
 }
 
 .title-text {
-    position: relative;
-    left: -0.8rem;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 
 .side-item {
@@ -51,6 +49,65 @@ body {
 .topbar {
     grid-column: 2 / span end;
     background-color: rgb(19, 216, 45);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+    gap: 0.5rem;
+}
+
+.top-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-top-left {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.top-top-right {
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+}
+
+.top-top-name {
+    font-size: 1rem;
+}
+
+.top-profile-pic {
+    width: 2.5rem;
+}
+
+.top-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.top-bot-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.bot-profile-pic {
+    width: 5rem;
+}
+
+.hello {
+    margin-bottom: 8px;
+}
+
+.kenobi-name {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+button {
+    margin: 0.5rem;
 }
 
 .dash {
