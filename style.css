@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(120px, 1fr) 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / span end;
+    background-color: aqua;
+}
+
+.topbar {
+    grid-column: 2 / span end;
+    background-color: rgb(19, 216, 45);
+}
+
+.dash {
+    display: grid;
+    grid-template-columns: minmax(300px, 3fr) minmax(200px, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.cards {
+    grid-row: 1 / span end;
+    background-color: orange;
+}
+
+.announcements {
+    background-color: pink;
+}
+
+.trending {
+    background-color: violet;
+}
