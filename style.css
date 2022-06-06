@@ -53,6 +53,11 @@ body {
     font-size: 1.3rem;
 }
 
+.side-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .topbar {
     grid-column: 2 / span end;
     display: flex;
@@ -138,6 +143,7 @@ button:hover {
     grid-template-columns: minmax(300px, 3fr) minmax(210px, 1fr);
     grid-template-rows: 1fr 1fr;
     background-color: var(--mint-cream);
+    box-shadow: 0.5rem 0.2rem 0.7rem rgb(204, 253, 236) inset;
 }
 
 .cards {
@@ -157,6 +163,14 @@ button:hover {
     border: 0.1rem solid;
     border-radius: 1rem;
     padding: 1rem;
+    box-shadow: 1px 3px 3px var(--dark-lava);
+}
+
+.card:hover {
+    cursor: pointer;
+    /*transform: scale(1.1);*/
+    transition: 200ms;
+    box-shadow: 1px 1px 1px var(--dark-lava) inset;
 }
 
 .announcements {
